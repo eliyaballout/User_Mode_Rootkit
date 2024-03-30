@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Welcome to user-mode Rootkit project, this program is written in c/c++. <br>
+Welcome to user-mode Rootkit project, this program is written in C/C++. <br>
 This project is a demonstration of a user-mode rootkit designed strictly for educational purposes. The rootkit includes functionality for DLL injection, API hooking, and process hiding in a Windows environment. It showcases techniques for injecting a custom DLL into a process, hooking Windows API functions to alter their behavior, and concealing specific processes from the process list. This tool is intended to serve as an educational resource for understanding the mechanics of software hooking, process manipulation, and the implications of rootkit behavior on system security. <br><br>
 
 
@@ -66,13 +66,13 @@ The techniques demonstrated by this project are powerful and can be misused if a
 ```
 injector.exe <PID>
 ```
-where `<PID>` should be the PID of the process that you want to attack. <br><br>
+where `<PID>` should be the ID of the process that you want to attack. <br><br>
 
 **Running the hideInject:**
 ```
 hideInject.exe <PID>
 ```
-where `<PID>` should be the PID of the same process that you attacked, in order to revert the hook.
+where `<PID>` should be the ID of the same process that you attacked, in order to revert the hook.
 
 <br><br>
 
@@ -97,3 +97,5 @@ This tool is intended for educational use only to demonstrate techniques commonl
 ## Demonstration of the rootkit
 
 **I did the demonstration on the Task Manager process and notepad for educational purposes only**
+
+

@@ -80,8 +80,7 @@ void InjectAllNotepadInstances(const char* dllPath) {
 
 int main(int argc, char *argv[]) {
 
-	//char dllPath[] = "C:\\Users\\ISE\\source\\repos\\injected\\x64\\Debug\\injected.dll";
-	char dllPath[] = "C:\\Users\\ISE\\source\\repos\\APIHooking\\x64\\Debug\\APIHooking.dll";
+	char dllPath[] = "PATH_TO_APIHooking.dll";
 
 	if (argc == 2) {
 		DWORD pid = (DWORD)atoi(argv[1]);
@@ -89,12 +88,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	else {
-		if (strcmp(dllPath, "C:\\Users\\ISE\\source\\repos\\injected\\x64\\Debug\\injected.dll") == 0) {
-			InjectAllNotepadInstances(dllPath);
-		}
-		else {
-			printf("Usage: injector.exe <PID>\n");
-		}
+		printf("Usage: injector.exe <PID>\n");
 	}
 
 	return 0;
